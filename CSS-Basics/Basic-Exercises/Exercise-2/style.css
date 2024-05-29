@@ -1,0 +1,20 @@
+.pink {
+    background-color: rgba(255, 105, 110, 0.7);
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+.font-size-increased {
+    font-size: larger;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#number-two {
+    color: rgb(0, 0, 255);
+    font-size: x-large;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#number-four {
+    background-color: rgb(162, 246, 110);
+    font-weight: 800;   
+}
