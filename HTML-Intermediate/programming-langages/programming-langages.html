@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar inside of header -->
+    <header>
+        <!-- This is how I did it before checking, looks absolutely identical:
+        <ul style="margin-left: 0; padding-left: 0;">Inside of header - let's add a navbar with some essential links<br>
+            <li style="display: inline; margin-left: 0; padding-left: 0;"><a href="#">Home</a></li>
+            <li style="display: inline;"><a href="#">About</a></li>
+            <li style="display: inline;"><a href="#">Contact</a></li>
+        </ul> 
+        -->
+        Inside of header - let's add a navbar with some essential links
+        <nav>
+            <a href="http://">Home</a>
+            <a href="http://"> About</a>
+            <a href="http://"> Contact</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h2>Here is the main section of our page - it consists of a new articles</h2>
+        <!-- Article 1 -->
+        <article>
+            <h2>Article 1 - 1995 was a pretty crazy year for programming languages!</h2>
+            <p>Don't believe me? Just check this table out:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Designed By</th>
+                        <th>First Appeared</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C++</td>
+                        <td>Bjarne Stroustrup</td>
+                        <td>1983</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Guido van Rossum</td>
+                        <td>1991</td>
+                    </tr>
+                    <tr>
+                        <td>Ruby</td>
+                        <td>Yukihiro Matsumoto ("Matz")</td>
+                        <td>1995</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Brendan Eich</td>
+                        <td>1995</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>James Gosling</td>
+                        <td>1995</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>PHP</td>
+                        <td>Rasmus Lerdorf</td>
+                        <td>1995</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+        <!-- Article 2 -->
+        <article>
+            <h2>Article 2 - Coming soon...</h2>
+        </article>
+        <aside>
+            <h2>Contact us!</h2>
+            <form action="#">
+                <h2>General Information</h2>
+                <label for="name">First Name <input type="text" name="name" id="name"></label><br>
+                <label for="last-name">Last Name <input type="text" name="last-name" id="last-name"></label><br>
+                <label for="email">Email <input type="email" name="email" id="email"></label><br>
+                <label for="birth">Date-Of-Birth <input type="date" name="birth" id="birth"></label>
+                <h2>Essential Questions</h2>
+
+                <label for="programming">What kind of work do you need?<br>Programming:
+                    <input type="checkbox" name="work-type" id="programming"></label><br>
+                <label for="design">Design:
+                    <input type="checkbox" name="work-type" id="design"></label><br>
+                <label for="singing">Singing:
+                    <input type="checkbox" name="work-type" id="singing"></label><br>
+                <label for="comedy">Comedy:
+                    <input type="checkbox" name="work-type" id="comedy"></label><br><br>
+                <label for="very-low">How interested are you in our design skills?<br>Very Low
+                    <input type="radio" name="design-skill-interest" id="very-low">
+                </label><br>
+                <label for="low">Low
+                    <input type="radio" name="design-skill-interest" id="low">
+                </label><br>
+                <label for="medium">Medium
+                    <input type="radio" name="design-skill-interest" id="medium">
+                </label><br>
+                <label for="high">High
+                    <input type="radio" name="design-skill-interest" id="high">
+                </label><br>
+                <label for="very-high">Very High
+                    <input type="radio" name="design-skill-interest" id="very-high">
+                </label><br>
+                <input type="submit" value="Submit Me!">
+            </form>
+        </aside>
+    </main>
+    <footer>
+        <p>Here is our footer - let's make sure we copyright &copy; this!</p>
+    </footer>
+</body>
+
+</html>
