@@ -2,25 +2,40 @@ body {
     font-family: Poppins, Helvetica, sans-serif;
 }
 
+.max-width {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 .container-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(122, 122, 122, 0.8);
     color: white;
     flex-wrap: wrap;
 }
+
+.dark-grey {
+    background-color: rgba(122, 122, 122, 0.8);
+}
+
+
 
 .centered {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px auto;
 
 }
 
 .centered p {
     max-width: 400px;
+}
+
+.light-grey {
+    background-color: rgb(231, 231, 231);
 }
 
 .container-footer {
