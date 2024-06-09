@@ -1,0 +1,38 @@
+/* custom css */
+/* using variables for css */
+/* create variables set with :root */
+/* variable name starts with "--" and can be anything, but the convention is to have it descriptive */
+
+:root {
+    --main-bg-color: lightgrey;
+    --main-text-color: black;
+    --main-font-size: 16px;
+}
+
+/* apply variables inside any selector */
+
+.class-example {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-size: var(--main-font-size);
+}
+
+
+
+/* positioning */
+
+/* absolute and relative!! 
+absolute is searching for the first relative container above it, if no containers are relative - absolute will be relative to the page itself
+position fixed is for the case when we need to have element static*/
+
+.parent {
+    position: fixed;
+}
+
+.child {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+}

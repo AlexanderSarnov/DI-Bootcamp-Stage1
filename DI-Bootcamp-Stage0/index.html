@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- description is for SEO -->
+    <meta description="" />
+    <!-- keywords SEO of the page -->
+    <!-- noindex and nofollow for avoiding search engines, also googlebot can be used to avoid only google search engine -->
+    <meta robots="robots" content="noindex, nofollow">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icon on the tab of the page (top area of browser) -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- in-page styles -->
+    <!-- script can be added in meta!! -->
+    <!-- defer and async is required to have script in the head to make sure page would be loaded well -->
+    <script defer async>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello World!";
+        }
+    </script>
+    <!-- this style will override the linked style because it is going after the linked one -->
+    <style>
+        .color {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML basic tags (elements) (block elements - create a new line after, while inline elements (span) will not create a new line) -->
+    <!-- paragraph tag | attributes: class, id, etc. -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum facilis excepturi consequuntur enim nulla? Ad,
+        optio aut distinctio sed amet dolorem exercitationem consectetur earum ex illo temporibus ea nesciunt similique!
+    </p>
+    <!-- headers h1-h6 used for accessibility -->
+    <h1>Main</h1>
+    <h2>Secondary</h2>
+    <!-- q and blockquote are very similar, attribute cite will add to searchengine -->
+    <blockquote cite="https://example.com">Lorem ipsum dolor sit amet consectetur adipisicing elit.</blockquote>
+    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit.</q>
+    <!-- for code insertion pre-one line, code-multiline -->
+    <pre>
+        {
+            "name": "John",
+            "age": 30,
+        }
+    </pre>
+    <code>
+        {
+        "name": "John",
+        "age": 30,
+        }
+    </code>
+    <!-- ordered lists and unordered lists -->
+    <ul></ul>
+    <ol></ol>
+    <!-- mark, insertion, deletion, sub, supsript (exists, need to search) - all of them outdated and instead we use css!!! -->
+    <ins></ins>
+    <del></del>
+    <sub></sub>
+    <small></small>
+    <i></i>
+    <b></b>
+    <!-- links tel is for calling applications!!!  -->
+    <a href="http://"></a>
+    <a href="mailto:"></a>
+    <a href="tel:+"></a>
+    <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+    <a href="index.html#id_attribute_on-page"></a>
+    <a href="other_page.html#id_attribute_other-page"></a>
+    <!-- attribute for downloading file -->
+    <a href="file.pdf" download=""></a>
+    <!-- navigation with name for accessibility - clicking on named link will move to the link with respected name -->
+    <a name="section_one" href="section_one">section_one</a>
+
+    <!-- details hidden element that can be unfolded, summary is visible element of details -->
+    <h1>The summary element</h1>
+
+    <details>
+        <summary>Epcot Center</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions,
+            award-winning fireworks and seasonal special events.</p>
+    </details>
+
+    <!-- images (always add alt for accessibility and cases when images can't be loaded), in israel you must add description in the language of the page (law), loading - the rule to download image (eager is default - download it as priority, lazy - is to download it as it goes, without priority) -->
+    <img src="" alt="" width="100px" , height="100px" loading="eager, lazy">
+    <!-- div - container for css -->
+    <div></div>
+
+    <!-- forms action-destination, method (get, post, etc. - node js, async with js - how to send data) to see someone's saved password - inspect, change the type of the field to text and password will be visible; | range - to see a range that is adjustable by the user (and can be set to be discreete), hidden-invisible, but may have a value and it will be added automatically to a submitted form, it may contain some information that dev decided to add to this hidden field, also by js that can update field value based on its id -->
+    <form action="for_label" , method="get">
+        <label for=""></label>
+        <input type="text" id="" name="for_label" placeholder="placeholder" required>
+        <input type="submit" value="submit">
+    </form>
+
+    <!-- tables, there are elements to be added to make sure it is properly taken from the page by parsing, tfoot goes after tbody and contains the sum of the table -->
+    <table>
+        <tbody>
+            <caption>Table Caption</caption>
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tr>
+                <td colspan="2">Jill</td>
+                <td>Headcrusher</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- we want page to be rendered before script will be available. Is for DOM. In case that script shall be related to some elements that need to be rendered strictly before script (when no action can be taken without full rendered page) -->
+    <script src="script3.js"></script>
+</body>
+
+</html>

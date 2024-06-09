@@ -1,0 +1,58 @@
+body {
+    background-color: lightblue;
+    color: red;
+}
+
+header,
+footer {
+    margin: 10px;
+}
+
+main {
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid pink;
+}
+
+/* media queries
+min-width: 600px; >600px will be affected
+max-width: 500px; <500px will be affected
+always go from largest to smallest and keep queries in the bottom section of css
+
+another use of media is for printing page, so that all the colored parameters would be b&w and so on
+*/
+
+@media only screen and (min-width: 1000px) {
+    body {
+        background-color: lightblue;
+    }
+
+    header,
+    footer {
+        background-color: lightgreen;
+    }
+}
+
+/* 
+all
+screen
+print
+speech
+tv
+projection
+braille
+*/
+
+@media print {
+
+    body,
+    header,
+    footer,
+    main {
+        background-color: white;
+        color: black;
+    }
+
+    ;
+}

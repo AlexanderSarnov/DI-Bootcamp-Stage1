@@ -1,0 +1,63 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+    --text-background-color-yellow: yellow;
+    --text-decoration-underline: underline;
+    --text-weight-bold: 700;
+    --text-color-red: red;
+    --box-border-red: red, solid;
+    --box-border-black: black, solid;
+    --box-width-max-wide-80: 80vw;
+    --box-align-center: auto;
+    --text-align-center: center;
+}
+
+.text-background-color-yellow {
+    background-color: yellow;
+}
+
+.text-underline {
+    text-decoration: var(--text-decoration-underline);
+}
+
+.text-weight-bold {
+    font-weight: var(--text-weight-bold);
+}
+
+.box-border-red {
+    border: var(--box-border-red);
+}
+
+.box-border-black {
+    border: var(--box-border-black);
+}
+
+.text-color-red {
+    color: var(--text-color-red);
+}
+
+.text-align-center {
+    text-align: var(--text-align-center);
+}
+
+.box-margin-padding-no-top-no-bottom {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.box-width-max-wide-80 {
+    max-width: var(--box-width-max-wide-80);
+}
+
+.box-align-center {
+    margin: var(--box-align-center);
+}
+
+.table-cell {
+    margin: auto;
+}
